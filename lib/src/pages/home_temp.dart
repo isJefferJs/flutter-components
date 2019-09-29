@@ -18,7 +18,7 @@ class HomePageTemp extends StatelessWidget {
     );
   }
 
-  List<Widget> _createItems() {
+  /* List<Widget> _createItems() {
     List<Widget> list = new List<Widget>();
     for (var option in options) {
       final tempWidget = ListTile(
@@ -28,7 +28,7 @@ class HomePageTemp extends StatelessWidget {
       list..add(tempWidget)..add(Divider());
     }
     return list;
-  }
+  }*/
 
   List<Widget> _createItemsCorto() {
     return options.map((item) {

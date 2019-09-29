@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 // paquetes de la app, propios
 import 'package:components/src/providers/menu_provider.dart';
 import 'package:components/src/utils/icono_string_util.dart';
-import 'package:components/src/pages/alert_page.dart';
+//import 'package:components/src/pages/alert_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
   Widget _list() {
     return FutureBuilder(
       future: menuProvider.cargarData(),
-      initialData: [],
+      initialData: [], //
       builder: ( BuildContext context, AsyncSnapshot<List<dynamic>> snapshot ) =>
         ListView(
           children: _listItems( snapshot.data, context ),
